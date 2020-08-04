@@ -1,0 +1,73 @@
+.about-me {
+  @include container;
+  @include clearfix;
+
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.about-img {
+  min-width: 80%;
+  min-height: 10em;
+
+  @media (min-width: 50em) {
+    float: left;
+    min-width: 90%;
+    min-height: 30em;
+  }
+}
+
+.about-title {
+  margin-bottom: 0.25em;
+}
+
+.about-subtitle {
+  margin: 0.5em 0;
+}
+
+@supports (display: grid) {
+  .about-me {
+    display: grid;
+    grid-template-columns:
+      [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr)
+      [img-end] 2fr [port-end];
+    grid-column-gap: 0.5em;
+  }
+
+  .about-img {
+    grid-column: port / img;
+    grid-row: 1 / 2;
+
+    @include mq {
+      grid-row: 1 / 4;
+    }
+  }
+
+  .about-title {
+    grid-column: name / port;
+    grid-row: 1 / 2;
+    align-self: end;
+    @media (min-width: 50em) {
+      grid-column: img;
+      grid-row: 1 / 2;
+      align-self: end;
+    }
+  }
+
+  .about-subtitle,
+  .about-text {
+    grid-column: port / port;
+
+    @include mq {
+      grid-column: img-end / port-end;
+    }
+  }
+
+  .about-subtitle {
+    grid-row: 2 / 3;
+  }
+
+  .about-text {
+    grid-row: 3 / 4;
+  }
+}

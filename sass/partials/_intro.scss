@@ -3,6 +3,18 @@
   color: rgba($white, 0.7);
   h2 {
     color: $white;
+    &::after {
+      width: 20%;
+      content: "";
+      height: 2px;
+      background: rgba($white, 0.5);
+      display: block;
+      margin: 1.5rem auto 0;
+    }
+  }
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 30em) 1fr;
   }
 }
 
@@ -13,15 +25,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 30%;
-  min-width: 30%x;
 }
 
-.intro-left img {
-  min-height: 100%;
-  min-width: 20%;
-}
+.intro-left img,
 .intro-right img {
+  object-fit: cover;
   min-height: 100%;
-  min-width: 20%;
+  min-width: 100%;
+  display: block;
 }
