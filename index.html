@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" />
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="index.js"></script>
     <title>Sonia Rawat</title>
 </head>
 <body>
@@ -21,13 +23,13 @@
                 decisions in the favor of the company in which I would be working. Important
                 decisions taken promptly would in tend lead to the advancement and progress
                 of the company. If I get international acclaim then this would again add to the
-                reputation of the company
+                reputation of the company.
             </p></div>
         <div class="intro-right"><img alt="side2" src="img/side2.jpg"></div>
     </section>
     
     <section class="about-me">
-        <img class="about-img" src="/img/background1.jpg" alt="My picture">
+        <img class="about-img" src="/img/my-photo.jpg" alt="My picture">
         <h1 class="about-title">About me</h1>
         <div class="about-text">
             <p>I am Soniya Rawat. I am an experienced interior
@@ -82,7 +84,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="portfolio-item" featured>
+                <figure class="portfolio-item">
                     <img src="/img/pp2.png" img="portfolio item">
                     <figcaption>
                         <h2 class="portfolio-title">Project Name 2</h2>
@@ -91,7 +93,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="portfolio-item" featured>
+                <figure class="portfolio-item">
                     <img src="/img/pp3.png" img="portfolio item">
                     <figcaption>
                         <h2 class="portfolio-title">Project Name 3</h2>
@@ -99,7 +101,7 @@
                         <a href="" class="portfolio-link">More Info</a>
                     </figcaption>
                 </figure>
-                <figure class="portfolio-item" featured>
+                <figure class="portfolio-item">
                     <img src="/img/pp6.png" img="portfolio item">
                     <figcaption>
                         <h2 class="portfolio-title">Project Name 3</h2>
@@ -108,7 +110,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="portfolio-item" featured>
+                <figure class="portfolio-item">
                     <img src="/img/pp5.png" img="portfolio item">
                     <figcaption>
                         <h2 class="portfolio-title">Project Name 4</h2>
@@ -122,19 +124,26 @@
     
     <section class="contact">       
         <h1>Contact me</h1>
-        <form action="">
-            <label for="name" class="name">Name: <input type="text" id="name"></input></label>
-            <label for="email" class="email">Email: <input type="text" id="email"></label>
-            <label for="message" class="message">Message: <textarea type="text" id="message"></textarea></label>
-            <button>Send</button>
+        <form action="https://formspree.io/xbjzwwke" method="POST">
+            <label for="name"  class="name">Name: <input type="text" id="name" name="name"></input></label>
+            <label for="email" class="email">Email: <input type="text" id="email" name="email"></label>
+            <label for="message" class="message">Message: <textarea type="text" id="message" name="message"></textarea></label>
+            <button type="submit" value="Send Email">Send</button>
         </form>
     </section>
 
     <footer>
         <p>Find me here..</p>
         <div class="social-icons">
-            <a  href="https://www.w3schools.com"><img  class="social-icon" src="/img/twitter.png" alt="deftdesign" ></a>
-            <a  href="https://www.w3schools.com"><img class="social-icon" src="/img/facebook.png" alt="facebook"></a>
+            <a href="https://www.w3schools.com">
+                <i  class="fa fa-twitter"></i>
+            </a>
+            <a  href="https://www.w3schools.com">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a  href="https://www.w3schools.com">
+                <i class="fa fa-linkedin"></i>
+            </a>
         </div>
         <p class="copyright">Copyright 2020 Sonia Portfolio</p>
     </footer>

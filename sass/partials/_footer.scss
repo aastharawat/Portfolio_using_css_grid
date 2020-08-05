@@ -8,6 +8,11 @@ footer {
   @include container($max-width: 15em);
   display: flex;
   justify-content: center;
+  i {
+    color: white;
+    font-size: 2rem;
+    padding: 0.2em;
+  }
 }
 
 .social-icon {
