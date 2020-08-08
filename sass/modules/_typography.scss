@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 $ff-s: "Merriweather", serif;
-$ff-ss: "Six Caps", sans-serif;
-
+$ff-o: "Oswald", sans-serif;
 $fw-l: 300;
 $fw-n: 400;
-$fw-b: 900;
+$fw-b: 1000;
 
-@mixin sans-serif($fs, $ls: 10px, $color: $gray, $tt: uppercase, $lh: 1) {
+@mixin sans-serif($fs, $color: $gray, $tt: uppercase, $lh: 1, $ls: 10px) {
   font-size: $fs;
   letter-spacing: $ls;
   color: $color;
   text-transform: $tt;
   line-height: $lh;
-  font-family: $ff-ss;
+  font-family: $ff-o;
   font-weight: $fw-b;
 }

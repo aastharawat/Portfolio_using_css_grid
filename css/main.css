@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -331,8 +332,8 @@ h2 {
   color: #a7a7a7;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif;
-  font-weight: 900; }
+  font-family: "Oswald", sans-serif;
+  font-weight: 1000; }
 
 .welcome {
   background-image: url(../../img/background1.jpg);
@@ -352,8 +353,8 @@ h2 {
       color: #298d98;
       text-transform: uppercase;
       line-height: 1;
-      font-family: "Six Caps", sans-serif;
-      font-weight: 900;
+      font-family: "Oswald", sans-serif;
+      font-weight: 1000;
       display: block; }
     .welcome h1::before, .welcome h1::after {
       content: "";
@@ -504,7 +505,7 @@ h2 {
 
 .portfolio-link {
   color: #ffffff;
-  font-weight: 900; }
+  font-weight: 1000; }
 
 @supports (display: grid) {
   .portfolio-items {
@@ -594,21 +595,10 @@ h2 {
   padding-bottom: 2em; }
 
 .portfolio-full-width {
-  width: 100vw;
-  max-width: initial;
-  margin: 2em calc(50% - 50vw);
-  height: 20vh;
+  width: 80vw;
+  margin: 0 auto;
+  height: 15vh;
   object-fit: cover; }
-
-@media (min-width: 50em) {
-  .portfolio-pull-left {
-    width: 65%;
-    float: left;
-    margin-right: 2em; }
-  .portfolio-pull-right {
-    width: 65%;
-    float: right;
-    margin-left: 2em; } }
 
 @keyframes modalIn {
   0% {
@@ -713,6 +703,6 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif;
-  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-weight: 1000;
   padding: 0.2em 0.5em; }

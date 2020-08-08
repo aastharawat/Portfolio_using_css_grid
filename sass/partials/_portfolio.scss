@@ -171,25 +171,10 @@
 }
 
 .portfolio-full-width {
-  width: 100vw;
-  max-width: initial;
-  margin: 2em calc(50% - 50vw);
-  height: 20vh;
+  width: 80vw;
+  margin: 0 auto;
+  height: 15vh;
   object-fit: cover;
-}
-
-@include mq {
-  .portfolio-pull-left {
-    width: 65%;
-    float: left;
-    margin-right: 2em;
-  }
-
-  .portfolio-pull-right {
-    width: 65%;
-    float: right;
-    margin-left: 2em;
-  }
 }
 
 @keyframes modalIn {
