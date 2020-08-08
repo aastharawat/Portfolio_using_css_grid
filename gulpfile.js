@@ -2,32 +2,11 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
 
-(browserSync = require("browser-sync").create()),
-  browserSync.init({
-    server: ".",
-  });
-
-gulp.task("sass", function () {
+gulp.task("sass-build", function () {
   return gulp
     .src("./sass/**/*.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./css"))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest("./css"));
 });
 
-gulp.task("images", function () {
-  return gulp
-    .src("./img/**/*.+(png|jpg|jpeg|gif|svg|PNG)")
-    .pipe(imagemin())
-    .pipe(gulp.dest("images"));
-});
-
-gulp.task("run", gulp.series(["sass", "images"]));
-
-gulp.task("watch", async function () {
-  gulp.watch("./sass", gulp.series("sass"), browserSync.reload);
-  gulp.watch("./index.html").on("change", browserSync.reload);
-  gulp.watch("./img", gulp.series("images"), browserSync.reload);
-});
-
-gulp.task("default", gulp.series(["run", "watch"]));
+gulp.task("build", gulp.series(["sass-build"]));
