@@ -7,8 +7,8 @@
   padding: 3%;
 
   @media (max-width: 600px) {
-    margin: 0rem;
-    padding-top: 4%;
+    margin: 0rem auto;
+    padding-top: 3%;
   }
 }
 .portfolio-item {
@@ -52,7 +52,7 @@
   letter-spacing: 0;
 
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0;
   }
   .featured & {
