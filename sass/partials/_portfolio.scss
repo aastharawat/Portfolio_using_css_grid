@@ -5,6 +5,11 @@
 .container {
   margin: 3rem;
   padding: 3%;
+
+  @media (max-width: 600px) {
+    margin: 0rem;
+    padding-top: 4%;
+  }
 }
 .portfolio-item {
   max-height: 200px;
@@ -30,6 +35,9 @@
     display: flex;
     flex-direction: column;
     transition: top ease-in-out 200ms;
+    @media (max-width: 900px) {
+      padding: 1em;
+    }
   }
 
   &:focus figcaption,
@@ -41,8 +49,15 @@
   color: $white;
   font-size: 3rem;
   margin-bottom: auto;
+  letter-spacing: 0;
+
+  @media (max-width: 900px) {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
   .featured & {
-    font-size: 5rem;
+    font-size: 2rem;
+    letter-spacing: 0;
   }
 }
 
@@ -81,6 +96,10 @@
   .featured {
     .portfolio-title {
       font-size: 5rem;
+      @media (max-width: 900px) {
+        font-size: 3rem;
+        letter-spacing: 0;
+      }
     }
 
     .portfolio-desc {
